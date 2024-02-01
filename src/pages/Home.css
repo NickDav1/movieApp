@@ -1,0 +1,58 @@
+ion-content{
+    font-style: sans-serif;
+}
+
+.movie-card {
+    padding: 16px;
+    border-radius: 8px;
+    width: 80%;
+    margin: 0 auto;
+    transition: transform 0.3s ease-in-out; /* Add a smooth transition effect */
+    font-weight: bold;
+    padding: 15px;
+  }
+
+     .movie-card p {
+        font-size: 1.1rem;
+        font-weight: bold;
+        padding: 12px;
+    }
+  
+  .movie-card img {
+    border-radius: 8px;
+  }
+  .movie-card:hover {
+    font-weight: bold;
+    border-radius: 50px;
+    border-color: #494949 !important;
+    transition: all 0.3s ease 0s; 
+    box-shadow: 0 0 6px lightblue;
+    transform: scale(1.04);
+  }
+
+  
+  .swiper-container {
+    border-radius: 10px;
+    overflow: hidden;
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .swiper-slide {
+    padding: 20px; /* Add some padding to each slide */
+  }
+  
+  ion-content.dark-mode {
+    --background: black;
+    --ion-text-color: #fff;
+    /* Add more styles as needed for dark mode */
+  }
+  
+  .movie-card.dark-mode {
+    background-color: rgb(13, 13, 13, 0.8);
+    color: #fff;
+  }
+
+  
+  
+  

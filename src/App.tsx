@@ -21,8 +21,13 @@ import '@ionic/react/css/display.css';
 
 /* Theme variables */
 import './theme/variables.css';
+import MovieDetail from './pages/MovieDetails';
+import SavedMovies from './pages/SavedMovies';
+import { useState } from 'react';
 
 setupIonicReact();
+
+
 
 const App: React.FC = () => (
   <IonApp>
@@ -34,6 +39,8 @@ const App: React.FC = () => (
         <Route exact path="/">
           <Redirect to="/home" />
         </Route>
+        <Route path="/movie/:id" component={MovieDetail} />
+        <Route path="/saved" component={SavedMovies} />
       </IonRouterOutlet>
     </IonReactRouter>
   </IonApp>
